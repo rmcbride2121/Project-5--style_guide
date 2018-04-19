@@ -4,6 +4,8 @@ $color-one: #62c4b2;
 $color-two: #7a7b7c;
 $color-three: #42c8f4;
 
+// Mixins
+
 
 //Base
 html {
@@ -12,22 +14,20 @@ html {
 
 .container {
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 40px;
-  padding-right: 0;
+  padding: 10px 25px;
   color: $color-two;
 }
 
 .grid__row {
   border: 3px solid green;
+  margin-bottom: 50px;
 }
 
 .grid__row:nth-of-type(1) {
   border: 3px solid blue;
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 75px;
+  padding-bottom: 50px;
 }
 
 ul {
@@ -95,10 +95,61 @@ li a:hover {
   border-bottom: 10px solid $color-one;
 }
 
+.img--frame {
+  display: block;
+  margin-top: 1em;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  border: 0.5px solid $color-two;
+  padding: 10px;
+}
+
 .btn--default {
   border-radius: 5px;
   color: white;
   background-color: $color-three;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
+
+.btn--info {
+  border-radius: 5px;
+  color: white;
+  background-color: purple;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
+.btn--error {
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
+.btn--success {
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
+.btn--warning {
+  border-radius: 5px;
+  color: white;
+  background-color: orange;
   text-align: center;
   font-size: large;
   width: 100%;
