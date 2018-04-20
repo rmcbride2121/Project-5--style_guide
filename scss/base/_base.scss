@@ -1,5 +1,29 @@
 // Universal Selector
 
+* {
+  font-family: $font-stack;
+}
+
 // <p> Elements
 
+
 // <ul> Elements
+
+ul {
+  list-style-type: none;
+  margin: 0 20px;
+  padding: 20px 0;
+}
+
+li a {
+  display: block;
+  color: $color-two;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: white;
+  background-color: $color-one;
+  border-radius: 5px;
+}

@@ -1,0 +1,56 @@
+// Buttons
+
+.btn--default {
+  border-radius: 5px;
+  color: white;
+  background-color: $color-three;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
+
+.btn--info {
+  border-radius: 5px;
+  color: white;
+  background-color: purple;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
+
+.btn--error {
+  border-radius: 5px;
+  color: white;
+  background-color: tomato;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
+
+.btn--success {
+  border-radius: 5px;
+  color: white;
+  background-color: green;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
+
+.btn--warning {
+  border-radius: 5px;
+  color: white;
+  background-color: orange;
+  text-align: center;
+  font-size: large;
+  width: 100%;
+  margin: 5px 0;
+  padding: 0.5em;
+}
