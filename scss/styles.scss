@@ -1,3 +1,9 @@
+// Imports
+
+@import 'utilities/index';
+@import 'base/index';
+@import 'components/index';
+
 // Varialbles
 $font-stack: Helvetica;
 $color-one: #62c4b2;
@@ -6,9 +12,11 @@ $color-three: #42c8f4;
 
 
 //Base
-html {
+* {
   font-family: $font-stack;
 }
+
+// Heading
 
 .container {
   margin: 0 auto;
@@ -28,6 +36,7 @@ html {
   padding-bottom: 50px;
 }
 
+// Base
 ul {
   list-style-type: none;
   margin: 0 20px;
@@ -47,6 +56,8 @@ li a:hover {
   border-radius: 5px;
 }
 
+// Headlines
+
 .headline--primary {
   color: $color-one;
   padding-left: 15px
@@ -56,10 +67,14 @@ li a:hover {
   font-weight: 200;
 }
 
+// Links
+
 .link {
   text-decoration: none;
   color: $color-three;
 }
+
+// Blockquote
 
 .blockquote {
   font-size: large;
@@ -102,6 +117,8 @@ li a:hover {
   border: 0.5px solid $color-two;
   padding: 10px;
 }
+
+// Buttons
 
 .btn--default {
   border-radius: 5px;
