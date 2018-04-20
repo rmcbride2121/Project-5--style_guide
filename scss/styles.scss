@@ -4,8 +4,6 @@ $color-one: #62c4b2;
 $color-two: #7a7b7c;
 $color-three: #42c8f4;
 
-// Mixins
-
 
 //Base
 html {
@@ -126,6 +124,7 @@ li a:hover {
   margin: 5px 0;
   padding: 0.5em;
 }
+
 .btn--error {
   border-radius: 5px;
   color: white;
@@ -136,6 +135,7 @@ li a:hover {
   margin: 5px 0;
   padding: 0.5em;
 }
+
 .btn--success {
   border-radius: 5px;
   color: white;
@@ -146,6 +146,7 @@ li a:hover {
   margin: 5px 0;
   padding: 0.5em;
 }
+
 .btn--warning {
   border-radius: 5px;
   color: white;
