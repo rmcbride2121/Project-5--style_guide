@@ -6,7 +6,7 @@
 }
 
 .headline--secondary {
-  font-weight: 200;
+  @extend %headline--secondary;
 }
 
 // Blockquote

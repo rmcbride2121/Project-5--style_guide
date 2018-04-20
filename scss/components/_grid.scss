@@ -1,0 +1,19 @@
+// Grid System
+
+.container {
+  margin: 0 auto;
+  padding: 10px 25px;
+  color: $color-two;
+}
+
+.grid__row {
+  border: 3px solid green;
+  margin-bottom: 50px;
+}
+
+.grid__row:nth-of-type(1) {
+  border: 3px solid blue;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}

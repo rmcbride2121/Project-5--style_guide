@@ -1,0 +1,16 @@
+// Forms
+
+.form__label--hidden,
+.form__input {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.form__label--hidden {
+  margin-top: 1em;
+  border-bottom: 10px solid $color-one;
+}
+
+.form {
+  margin-top: 50px;
+}

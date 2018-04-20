@@ -1,0 +1,14 @@
+// Navigation
+
+.nav__item a {
+  display: block;
+  color: $color-two;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.nav__item a:hover {
+  color: white;
+  background-color: $color-one;
+  border-radius: 5px;
+}
