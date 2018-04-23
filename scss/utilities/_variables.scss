@@ -16,14 +16,24 @@ $font-stack: Helvetica;
 // Breakpoints
 
 
-// Theme Colors
+// Button Colors
 
 $button-colors: (
-'grid__col--12': $color-one,
-'grid__col--6': $color-eight,
-'grid__col--4': $color-three,
-'grid__col--3': $color-seven,
-'grid__col--5': $color-four,
-'grid__col--7': $color-five,
-'grid__col--8': $color-seven,
+  default: $color-three,
+  success: $color-six,
+  error: $color-five,
+  warning: $color-seven,
+  info: $color-four,
 );
+
+// Grid System Colors
+
+$grid-colors: (
+  12: $color-one,
+  6: $color-eight,
+  4: $color-three,
+  3: $color-four,
+  5: $color-six,
+  7: $color-five,
+  8: $color-seven,
+)

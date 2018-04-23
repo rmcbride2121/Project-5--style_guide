@@ -4,31 +4,37 @@
   @extend %button;
 }
 
-.btn {
-  &--default {
-    background-color: $color-three;
-    text-align: center;
-  }
-  &--info {
-    text-align: center;
-    background-color: $color-four;
-  }
-  &--error {
-    text-align: center;
-    background-color: $color-five;
-  }
-  &--success {
-    text-align: center;
-    background-color: $color-six;
-  }
-  &--warning {
-    text-align: center;
-    background-color: $color-seven;
+// .btn {
+//   &--default {
+//     background-color: $color-three;
+//     text-align: center;
+//   }
+//   &--info {
+//     text-align: center;
+//     background-color: $color-four;
+//   }
+//   &--error {
+//     text-align: center;
+//     background-color: $color-five;
+//   }
+//   &--success {
+//     text-align: center;
+//     background-color: $color-six;
+//   }
+//   &--warning {
+//     text-align: center;
+//     background-color: $color-seven;
+//   }
+// }
+
+@each $button, $color in $button-colors {
+  .btn--#{$button} {
+    background-color: $color;
   }
 }
 
-@each $button, $color in $button-colors {
-  .grid__col--#{$button} {
+@each $grid, $color in $grid-colors {
+  .grid__col--#{$grid} {
     background-color: $color;
   }
 }
