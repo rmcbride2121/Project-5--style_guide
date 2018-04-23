@@ -3,9 +3,27 @@
 $color-one: #62c4b2;
 $color-two: #7a7b7c;
 $color-three: #42c8f4;
+$color-four: purple;
+$color-five: tomato;
+$color-six: green;
+$color-seven: orange;
+$color-eight: indigo;
 
 // Fonts
 
 $font-stack: Helvetica;
 
 // Breakpoints
+
+
+// Theme Colors
+
+$button-colors: (
+'grid__col--12': $color-one,
+'grid__col--6': $color-eight,
+'grid__col--4': $color-three,
+'grid__col--3': $color-seven,
+'grid__col--5': $color-four,
+'grid__col--7': $color-five,
+'grid__col--8': $color-seven,
+);

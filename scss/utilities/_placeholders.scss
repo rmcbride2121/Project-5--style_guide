@@ -22,24 +22,15 @@
 
 // Nav items
 
+
 // Buttons
 
 %button {
   border-radius: 5px;
   color: white;
-  text-align: center;
+  background-color: grey;
   font-size: large;
   width: 100%;
   margin: 5px 0;
-  padding: 0.5em;
-}
-
-%button-grid {
-  border-radius: 5px;
-  color: white;
-  text-align: center;
-  font-size: large;
-  width: 100%;
-  margin: 5px -10px;
   padding: 0.5em;
 }

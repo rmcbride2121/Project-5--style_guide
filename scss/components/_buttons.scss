@@ -1,31 +1,34 @@
 // Buttons
 
-.btn--default {
+.theme__colors {
   @extend %button;
-  background-color: $color-three;
 }
 
-.btn--info {
-  @extend %button;
-  background-color: purple;
+.btn {
+  &--default {
+    background-color: $color-three;
+    text-align: center;
+  }
+  &--info {
+    text-align: center;
+    background-color: $color-four;
+  }
+  &--error {
+    text-align: center;
+    background-color: $color-five;
+  }
+  &--success {
+    text-align: center;
+    background-color: $color-six;
+  }
+  &--warning {
+    text-align: center;
+    background-color: $color-seven;
+  }
 }
 
-.btn--error {
-  @extend %button;
-  background-color: tomato;
-}
-
-.btn--success {
-  @extend %button;
-  background-color: green;
-}
-
-.btn--warning {
-  @extend %button;
-  background-color: orange;
-}
-
-.grid__col--12:nth-of-type(3) {
-  @extend %button-grid;
-  background-color: $color-one;
+@each $button, $color in $button-colors {
+  .grid__col--#{$button} {
+    background-color: $color;
+  }
 }
