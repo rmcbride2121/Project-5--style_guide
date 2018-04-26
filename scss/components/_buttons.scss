@@ -4,37 +4,28 @@
   @extend %button;
 }
 
-// .btn {
-//   &--default {
-//     background-color: $color-three;
-//     text-align: center;
-//   }
-//   &--info {
-//     text-align: center;
-//     background-color: $color-four;
-//   }
-//   &--error {
-//     text-align: center;
-//     background-color: $color-five;
-//   }
-//   &--success {
-//     text-align: center;
-//     background-color: $color-six;
-//   }
-//   &--warning {
-//     text-align: center;
-//     background-color: $color-seven;
-//   }
-// }
+.grid__col--6.theme__colors {
+
+}
+
+// Each Loops
 
 @each $button, $color in $button-colors {
   .btn--#{$button} {
     background-color: $color;
+    @media screen and (min-width: $breakpoint-tablet){
+      width: auto;
+    }
   }
 }
 
 @each $grid, $color in $grid-colors {
-  .grid__col--#{$grid} {
+  .grid__col--#{$grid}.theme__colors {
     background-color: $color;
+    color: $color-two;
+      @media screen and (min-width: $breakpoint-tablet){
+        text-align: center;
+        margin: auto;
+      }
   }
 }

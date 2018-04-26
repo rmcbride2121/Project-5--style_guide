@@ -13,4 +13,12 @@
 
 .form {
   margin-top: 50px;
+  @media screen and (min-width: $breakpoint-tablet) {
+    margin-top: 25px;
+    margin-left: 0;
+    margin-right: 75px;
+    width: 80%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }

@@ -12,3 +12,13 @@
   background-color: $color-one;
   border-radius: 5px;
 }
+
+.nav {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: row;
+    flex: 2;
+    margin-left: 4em;
+    margin-right: 5em;
+  }
+}

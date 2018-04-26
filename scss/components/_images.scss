@@ -3,12 +3,22 @@
 .img--avatar {
   @extend %image;
   width: 40%;
+   @media screen and (min-width: $breakpoint-tablet) {
+    width: 65%;
+   }
 }
-
 
 .img--frame {
   @extend %image;
   width: 60%;
   border: 0.5px solid $color-two;
   padding: 10px;
+}
+
+.img--logo {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex: 1;
+    margin-left: 1em;
+  }
 }

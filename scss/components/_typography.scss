@@ -19,3 +19,11 @@
   padding-left: 1em;
   padding-right: 5px;
 }
+
+// Media Query
+
+.grid__col--8.card {
+  @media screen and (min-width: $breakpoint-tablet) {
+    // padding-right: 3em;
+  }
+}

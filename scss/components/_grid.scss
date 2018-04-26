@@ -16,4 +16,33 @@
   text-align: center;
   padding-top: 30px;
   padding-bottom: 50px;
+   @media screen and (min-width: $breakpoint-tablet) {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+   }
+}
+
+.grid__row:nth-of-type(3) {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.grid__row:nth-of-type(4) {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 8em;
+  }
+}
+
+.grid__row:nth-of-type(5) {
+  @media screen and (min-width: $breakpoint-tablet) {
+    display: flex;
+    justify-content: center;
+    padding: auto 50px;
+  }
 }

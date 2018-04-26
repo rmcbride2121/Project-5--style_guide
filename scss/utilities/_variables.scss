@@ -15,6 +15,7 @@ $font-stack: Helvetica;
 
 // Breakpoints
 
+$breakpoint-tablet: 768px;
 
 // Button Colors
 
@@ -29,7 +30,7 @@ $button-colors: (
 // Grid System Colors
 
 $grid-colors: (
-  12: $color-one,
+ 12: $color-one,
   6: $color-eight,
   4: $color-three,
   3: $color-four,
