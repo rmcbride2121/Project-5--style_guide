@@ -7,42 +7,88 @@
 }
 
 .grid__row {
-  border: 3px solid green;
   margin-bottom: 50px;
 }
 
 .grid__row:nth-of-type(1) {
-  border: 3px solid blue;
   text-align: center;
   padding-top: 30px;
   padding-bottom: 50px;
-   @media screen and (min-width: $breakpoint-tablet) {
-     display: flex;
-     flex-direction: row;
+   @include tablet {
+     @include flex-row
      justify-content: space-between;
    }
 }
 
 .grid__row:nth-of-type(3) {
-  @media screen and (min-width: $breakpoint-tablet) {
-    display: flex;
-    flex-direction: row;
+  @include tablet {
+    @include flex-row
   }
 }
 
 .grid__row:nth-of-type(4) {
-  @media screen and (min-width: $breakpoint-tablet) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  @include tablet {
+    @include flex-row
+    justify-content: center;
     padding-right: 8em;
   }
 }
 
 .grid__row:nth-of-type(5) {
-  @media screen and (min-width: $breakpoint-tablet) {
-    display: flex;
-    justify-content: center;
-    padding: auto 50px;
+  @include tablet {
+    @include flex-grid
+    flex-direction: row;
+  }
+}
+
+.grid__row:nth-of-type(6),
+ .grid__row:nth-of-type(7),
+ .grid__row:nth-of-type(8),
+ .grid__row:nth-of-type(9),
+ .grid__row:nth-of-type(10),
+ .grid__row:nth-of-type(11){
+  @include tablet {
+    @include flex-grid
+  }
+}
+
+.grid__row:nth-of-type(12) {
+  @include tablet {
+    @include flex-grid
+    width: 60%;
+    margin: auto;
+  }
+}
+
+// Grid image
+
+.grid__col--6.img--avatar {
+  margin: auto;
+}
+
+// Each Loops
+
+@each $grid, $color in $grid-colors {
+  .grid__col--#{$grid}.theme__colors {
+    background-color: $color;
+    color: $color-two;
+      @include tablet {
+        text-align: center;
+        margin: auto 5px;
+      }
+  }
+}
+
+// Extra grids
+
+.grid__col--5.theme__colors {
+  @include tablet {
+    width: 60%;
+  }
+}
+
+.grid__col--8.theme__colors {
+  @include tablet {
+    width: 140%;
   }
 }

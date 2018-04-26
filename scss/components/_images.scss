@@ -3,7 +3,7 @@
 .img--avatar {
   @extend %image;
   width: 40%;
-   @media screen and (min-width: $breakpoint-tablet) {
+   @include tablet {
     width: 65%;
    }
 }
@@ -16,7 +16,7 @@
 }
 
 .img--logo {
-  @media screen and (min-width: $breakpoint-tablet) {
+  @include tablet {
     display: flex;
     flex: 1;
     margin-left: 1em;

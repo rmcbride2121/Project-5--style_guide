@@ -6,14 +6,21 @@
   flex-wrap: wrap;
 }
 
-.form__label--hidden {
-  margin-top: 1em;
+.form__input {
+  border: none;
+  width: 100%;
   border-bottom: 10px solid $color-one;
+  font-size: medium;
+  margin: 1.5em  auto;
+}
+
+.form__label--hidden {
+  display: none;
 }
 
 .form {
   margin-top: 50px;
-  @media screen and (min-width: $breakpoint-tablet) {
+  @include tablet {
     margin-top: 25px;
     margin-left: 0;
     margin-right: 75px;

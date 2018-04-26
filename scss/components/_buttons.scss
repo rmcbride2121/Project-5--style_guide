@@ -4,8 +4,23 @@
   @extend %button;
 }
 
-.grid__col--6.theme__colors {
+.btn--default,
+.btn--info,
+.btn--error,
+.btn--success,
+.btn--warning {
+  @include tablet {
+    width: 90px;
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
 
+.form .btn--default {
+  @include tablet{
+    width: 100%;
+    margin: auto;
+  }
 }
 
 // Each Loops
@@ -13,19 +28,5 @@
 @each $button, $color in $button-colors {
   .btn--#{$button} {
     background-color: $color;
-    @media screen and (min-width: $breakpoint-tablet){
-      width: auto;
-    }
-  }
-}
-
-@each $grid, $color in $grid-colors {
-  .grid__col--#{$grid}.theme__colors {
-    background-color: $color;
-    color: $color-two;
-      @media screen and (min-width: $breakpoint-tablet){
-        text-align: center;
-        margin: auto;
-      }
   }
 }
