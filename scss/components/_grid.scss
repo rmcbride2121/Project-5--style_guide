@@ -15,20 +15,20 @@
   padding-top: 30px;
   padding-bottom: 50px;
    @include tablet {
-     @include flex-row
+     @include flex-row;
      justify-content: space-between;
    }
 }
 
 .grid__row:nth-of-type(3) {
   @include tablet {
-    @include flex-row
+    @include flex-row;
   }
 }
 
 .grid__row:nth-of-type(4) {
   @include tablet {
-    @include flex-row
+    @include flex-row;
     justify-content: center;
     padding-right: 8em;
   }
@@ -36,7 +36,7 @@
 
 .grid__row:nth-of-type(5) {
   @include tablet {
-    @include flex-grid
+    @include flex-grid;
     flex-direction: row;
   }
 }
@@ -48,13 +48,13 @@
  .grid__row:nth-of-type(10),
  .grid__row:nth-of-type(11){
   @include tablet {
-    @include flex-grid
+    @include flex-grid;
   }
 }
 
 .grid__row:nth-of-type(12) {
   @include tablet {
-    @include flex-grid
+    @include flex-grid;
     width: 60%;
     margin: auto;
   }
